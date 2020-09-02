@@ -1,4 +1,4 @@
-# subgroup_sem
+# subgroupsem
 
 One Paragraph of project description goes here
 
