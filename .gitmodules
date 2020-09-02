@@ -1,0 +1,4 @@
+[submodule "pysubgroup"]
+	path = pysubgroup
+	url = https://github.com/flemmerich/pysubgroup.git
+

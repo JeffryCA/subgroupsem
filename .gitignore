@@ -1,0 +1,12 @@
+*packrat
+*.Rprofile
+*.Rhistory
+*.DS_Store
+env
+config.json
+ESS3
+*.pkl
+*subgroupsem.egg-info
+packrat/lib*/
+*Examples/Artficial Mediator/artificial_data.csv
+*ess_data.csv
