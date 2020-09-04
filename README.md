@@ -149,6 +149,8 @@ For more information about the options visit the [lavaan website](http://lavaan.
 
 ## License
 
+We are happy about anyone using this software. Thus, this work is put under an Apache license. However, if this constitutes any hindrance to your application, please feel free to contact us, we are sure that we can work something out.
+
 Copyright 2016-2020 Florian Lemmerich, Christoph Kiefer, Benedikt Langenberg, Jeffry Cacho Aboukhalil, Axel Mayer, Felix Stamm
 
 Licensed under the Apache License, Version 2.0 (the "License");
