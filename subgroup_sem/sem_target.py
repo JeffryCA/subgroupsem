@@ -10,6 +10,26 @@ from collections import namedtuple
 import pkg_resources
 
 class SEMTarget(object):
+    """ SEM class object. Initialize by passing a model and and the constraints for the wald test, both in lavaan (R) sintax.
+    It is important to use vectors of lenght 2 for the parameters - the first is used for the subgroup, the second for the complement.
+    Example:
+        model = (' # direct effect \n'
+        'Y ~ c(c1,c2)*X \n'
+        '# mediator \n'
+        'M ~ c(a1,a2)*X \n'
+        'Y ~ c(b1,b2)*M \n'
+        '# indirect effect (a*b) \n'
+        'indirect1 := a1*b1 \n' 
+        'indirect2 := a2*b2 \n'
+        '# total effect \n'
+        'total1 := c1 + (a1*b1) \n'
+        'total2 := c2 + (a2*b2) \n'
+        '# direct effect \n'
+        'direct1 := c1 \n'
+        'direct2 := c2')
+
+        wald_test_contstraints = 'c1==c2'
+    """
     def __init__(self, data, model, wald_test_constraints):
         self.filename = pkg_resources.resource_filename('subgroup_sem', 'Calculate_Statistics.R')
         self.data = data
