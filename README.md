@@ -1,6 +1,6 @@
 # subgroupsem
 
-One Paragraph of project description goes here
+This package is used to apply subgroup discovery in combination with structural equation modeling, SEM. 
 
 ### Prerequisites
 
